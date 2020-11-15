@@ -1,1 +1,48 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="books">Livres</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li routerLinkActive="active">
+            <a href="#" class="stylesign" routerLink="auth/signup">
+                <span class="glyphicon glyphicon-user"></span> 
+                Sign Up
+            </a>
+        </li>
+        <li routerLinkActive="active">
+            <a href="#" class="stylesign" routerLink="auth/signin">
+                <span class="glyphicon glyphicon-log-in"></span> 
+                Sign In
+            </a>
+        </li>
+        <li class="stylesignout">
+          <a>
+            <span class="glyphicon glyphicon-log-out"></span> 
+              Sign Out
+          </a>
+      </li>
+      </ul>
+    </div>
+  </nav>
