@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import firebase from 'firebase';
 
@@ -12,14 +11,14 @@ export class AppComponent {
 
   constructor(){
     var firebaseConfig = {
-      apiKey: "AIzaSyDUNkfcVGswiiuf0p_ZYEsqt6uFm4R8Ans",
-      authDomain: "deploymentfirebase-3fcb0.firebaseapp.com",
-      databaseURL: "https://deploymentfirebase-3fcb0.firebaseio.com",
-      projectId: "deploymentfirebase-3fcb0",
-      storageBucket: "deploymentfirebase-3fcb0.appspot.com",
-      messagingSenderId: "952427979263",
-      appId: "1:952427979263:web:294c4c104b89eaf280c7ca",
-      measurementId: "G-SV57TCZK9B"
+      apiKey: "AIzaSyA9u3AlS07Owb1_1KQeVHKRhN_BtN8cKwE",
+      authDomain: "deploymentheroku.firebaseapp.com",
+      databaseURL: "https://deploymentheroku.firebaseio.com",
+      projectId: "deploymentheroku",
+      storageBucket: "deploymentheroku.appspot.com",
+      messagingSenderId: "455755373061",
+      appId: "1:455755373061:web:436961ce79068f551c5a6c",
+      measurementId: "G-7NJ6HVE7CX"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
