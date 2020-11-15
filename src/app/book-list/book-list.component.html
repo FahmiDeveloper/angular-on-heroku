@@ -1,1 +1,56 @@
-<p>book-list works!</p>
+<!-- <div class="row">
+    <div class="col-xs-12">
+      <h2>Vos livres</h2>
+      <div class="list-group">
+        <button
+          class="list-group-item"
+          *ngFor="let book of books; let i = index"
+          (click)="onViewBook(i)">
+          <h3 class="list-group-item-heading">
+            {{ book.title }}
+            <button class="btn btn-default pull-right" (click)="onDeleteBook(book)">
+              <span class="glyphicon glyphicon-minus"></span>
+            </button>
+          </h3>
+          <p class="list-group-item-text">{{ book.author }}</p>
+        </button>
+      </div>
+      <button class="btn btn-primary" (click)="onNewBook()">Nouveau livre</button>
+    </div>
+  </div> -->
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Books List
+        <button class="btn btn-primary float-right" (click)="onNewBook()">New</button>
+      </h2>
+
+  <table class="table table-striped">
+    <thead class="bg-success text-white">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Synopsis</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books; let i = index">
+        <th>{{i+1}}</th>
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.synopsis }}</td>
+        <td>
+          <button class="btn btn-warning spacebtn" (click)="onViewBook(i)">
+            <span class="text-white">View</span>
+          </button>
+          <button class="btn btn-danger spacebtn" (click)="onDeleteBook(book)">
+            <span class="text-white">Delete</span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
