@@ -34,7 +34,7 @@ export class BookListComponent implements OnInit {
     Swal.fire({
 
       title: 'Are you sure want to remove?',
-      text: 'You will not be able to recover this file!',
+      text: 'You will not be able to recover this data!',
       icon: 'warning',
       showCancelButton: true,
       confirmButtonText: 'Yes, delete it!',
@@ -44,13 +44,13 @@ export class BookListComponent implements OnInit {
         this.booksService.removeBook(book);
         Swal.fire(
           'Deleted!',
-          'Your imaginary file has been deleted.',
+          'Book data has been deleted',
           'success'
         )
       } else if (result.dismiss === Swal.DismissReason.cancel) {
         Swal.fire(
           'Cancelled',
-          'Your imaginary file is safe :)',
+          'Book data is safe',
           'error'
         )
       }
