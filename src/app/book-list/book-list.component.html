@@ -19,10 +19,10 @@
     </div>
   </div> -->
 
-  <div class="row">
-    <div class="col-xs-12">
+  <div class="row" style="margin-top: 55px;">
+    <div class="col-md-12">
       <h2>Books List
-        <button class="btn btn-primary float-right" (click)="onNewBook()">New</button>
+        <button class="btn btn-warning float-right" (click)="onNewBook()">New</button>
       </h2>
 
   <table class="table table-striped">
@@ -42,7 +42,7 @@
         <td>{{ book.author }}</td>
         <td>{{ book.synopsis }}</td>
         <td>
-          <button class="btn btn-warning spacebtn" (click)="onViewBook(i)">
+          <button class="btn btn-info spacebtn" (click)="onViewBook(i)">
             <span class="text-white">View</span>
           </button>
           <button class="btn btn-danger spacebtn" (click)="onDeleteBook(book)">
@@ -54,3 +54,4 @@
   </table>
   </div>
   </div>
+  

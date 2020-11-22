@@ -27,18 +27,22 @@
   <ul class="nav navbar-nav navbar-right">
       <li routerLinkActive="active" *ngIf="!isAuth">
           <a href="#" class="stylesign" routerLink="auth/signup">
+            <i class="fa fa-user-plus"></i>
               <span class="glyphicon glyphicon-user"></span> 
               Sign Up
           </a>
       </li>
       <li routerLinkActive="active" *ngIf="!isAuth">
+        
           <a href="#" class="stylesign" routerLink="auth/signin">
+            <i class="fa fa-sign-in-alt"></i>
               <span class="glyphicon glyphicon-log-in"></span> 
               Sign In
           </a>
       </li>
       <li (click)="onSignOut()" class="stylesignout" *ngIf="isAuth">
         <a>
+          <i class="fa fa-sign-out-alt"></i>
           <span class="glyphicon glyphicon-log-out"></span> 
             Sign Out
         </a>
